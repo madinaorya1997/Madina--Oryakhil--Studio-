@@ -592,5 +592,61 @@ footer {
   font-size: 15px;
   margin-top: 20px;
   font-weight: bold;
+}.logo {
+  font-size: 20px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}.founder {
+  color: #d4af65;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+  text-align: center;
+}.copyright-owner {
+  color: #d4af65;
+  font-size: 13px;
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}@media (max-width: 600px) {
+  .logo {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .menu-toggle {
+    font-size: 22px;
+    padding: 6px 10px;
+  }
+}@media (max-width: 600px) {
+  .header {
+    padding: 18px 5%;
+  }
+}@media (max-width: 600px) {
+  .button {
+    display: inline-block;
+    padding: 14px 22px;
+    margin: 8px 5px;
+  }
+}@media (max-width: 600px) {
+  section h2 {
+    font-size: 28px;
+  }
+}@media (max-width: 600px) {
+  .section-description,
+  .description {
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 0 10px;
+  }
+}.footer-links a {
+  color: #d4af65;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
 }
   
