@@ -648,5 +648,28 @@ footer {
 
 .footer-links a:hover {
   color: #ffffff;
+}#skills {
+  padding: 100px 8%;
+  text-align: center;
+  background: #111111;
+}
+
+#skills .services-container {
+  margin-top: 40px;
+}
+
+#skills .service-box {
+  border: 1px solid #80663a;
+  transition: 0.3s ease;
+}
+
+#skills .service-box:hover {
+  transform: translateY(-8px);
+  border-color: #d4af65;
+}
+
+#skills h3 {
+  color: #d4af65;
+  margin-bottom: 15px;
 }
   
