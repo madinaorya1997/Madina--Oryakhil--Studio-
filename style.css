@@ -671,5 +671,8 @@ footer {
 #skills h3 {
   color: #d4af65;
   margin-bottom: 15px;
-}
+}#skills .service-box {
+  border: 2px solid #d4af65 !important;
+  box-shadow: 0 0 8px rgba(212, 175, 101, 0.25);
+  }
   
