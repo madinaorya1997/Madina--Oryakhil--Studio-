@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madina Studio | Creative Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+  <div class="logo">MADINA<span>.</span></div>
+
+  <button class="menu-toggle" id="menuToggle"
+          type="button" aria-label="Open menu">
+    ☰
+  </button>
+
+  <nav class="nav-menu" id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+  <main>
+
+    <!-- HOME -->
+<section class="hero" id="home">
+  <p class="subtitle">WELCOME TO MADINA STUDIO</p>
+
+  <h1>We Build Digital<br>Experiences.</h1>
+
+  <p class="description">
+    We help businesses grow with
+    creative design and modern websites.
+  </p>
+
+  <a href="#services" class="button">
+    Explore Our Services
+  </a>
+
+  <a href="#contact" class="button secondary-button">
+    Contact Us
+  </a>
+</section>
+
+    <!-- ABOUT -->
+<section id="about">
+  <p class="subtitle">WHO WE ARE</p>
+  <h2>About Us</h2>
+  <div class="gold-line"></div>
+  <p class="section-description">
+    Madina Oryakhil Studio is a creative digital studio
+    focused on building beautiful and modern websites.
+  </p>
+
+  <p class="section-description">
+    We believe every business deserves a strong
+    online presence. Our goal is to turn ideas
+    into meaningful digital experiences.
+  </p>
+
+  <a href="#contact" class="button">
+    Work With Us
+  </a>
+</section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <p class="subtitle">WHAT WE DO</p>
+      <h2>Our Services</h2>
+      <div class="gold-line"></div>
+      <p class="section-description">
+        Creative solutions to help your business grow.
+      </p>
+
+      <div class="services-container">
+
+        <div class="service">
+          <div class="service-icon">✦</div>
+          <h3>Web Design</h3>
+          <p>Beautiful and modern website designs.</p>
+          <a href="#contact">Learn More →</a>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">⌘</div>
+          <h3>Web Development</h3>
+          <p>Responsive websites for every device.</p>
+          <a href="#contact">Learn More →</a>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">◈</div>
+          <h3>Digital Solutions</h3>
+          <p>Smart digital ideas for your business.</p>
+          <a href="#contact">Learn More →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="subtitle">OUR PORTFOLIO</p>
+      <h2>Recent Projects</h2>
+      <div class="gold-line"></div>
+  
+      <p class="section-description">
+        Some of our creative digital work.
+      </p>
+
+      <div class="projects-container">
+
+        <div class="project-card">
+          <div class="project-image fashion">
+            <img
+  class="project-photo"
+  src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900"
+  alt="Fashion Store"
+>
+          </div>
+          <h3>Fashion Website</h3>
+          <p>Modern online store design.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image beauty">
+  <img
+    class="project-photo"
+    src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=900"
+    alt="Beauty Brand"
+  >
+</div>
+          <h3>Beauty Website</h3>
+          <p>Elegant beauty business website.</p>
+        </div>
+
+        <div class="project-card">
+        <div class="project-image business">
+  <img
+    class="project-photo"
+    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900"
+    alt="Business Website"
+  >
+</div>
+          <h3>Business Website</h3>
+          <p>Professional company website.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="subtitle">GET IN TOUCH</p>
+      <h2>Let's Work Together</h2>
+      <div class="gold-line"></div>
+
+      <p class="section-description">
+        Have a project in mind? Contact us today.
+      </p>
+
+      <form id ="contactForm"
+        action="https://formspree.io/f/xeagkvqg"
+            method="POST"
+            class="contact-form">
+
+        <input type="text" name="name"
+               placeholder="Your Name" required>
+
+        <input type="email" name="email"
+               placeholder="Your Email" required>
+
+        <textarea name="message"
+                  placeholder="Tell us about your project"
+                  required></textarea>
+
+        <button type="submit" class="button">
+          Send Message
+        </button>
+
+      </form>
+      <p id="formMessage"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <button id="backToTop" class="back-to-top" type="button">
+  ↑
+</button>
+    <footer class="footer">
+  <div class="footer-logo">MADINA<span>.</span></div>
+
+  <p>Creating beautiful digital experiences.</p>
+
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="footer-bottom">
+    © <spen id="year"></spen> Madina Studio. All rights reserved.
+  </div>
+</footer>
+  </footer>
+ <script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  menuToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+  });
+
+  navMenu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      navMenu.classList.remove("active");
+    });
+  });
+   const backToTop = document.getElementById("backToTop");
+
+backToTop.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+   const revealElements = document.querySelectorAll(
+  "section, .service, .project-card"
+);
+
+const revealObserver = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+    }
+  });
+});
+
+revealElements.forEach(function (element) {
+  element.classList.add("reveal");
+  revealObserver.observe(element);
+});
+   const year = document.getElementById("year");
+year.textContent = new Date().getFullYear();
+   const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+contactForm.addEventListener("submit", async function(event) {
+  event.preventDefault();
+
+  const response = await fetch(contactForm.action, {
+    method: "POST",
+    body: new FormData(contactForm),
+    headers: {
+      Accept: "application/json"
+    }
+  });
+
+  if (response.ok) {
+    contactForm.querySelector("button").textContent = "Message Sent ✓";
+    formMessage.textContent = "Thank you! Your message has been sent successfully.";
+    contactForm.reset();
+    contactForm.querySelector("button").textContent = "Send Message";
+  } else {
+    formMessage.textContent = "Oops! Something went wrong. Please try again.";
+  }
+});
+</script> 
+</body>
+</html>
