@@ -731,5 +731,22 @@ footer {
 
 #marketplace p {
   color: #f5f1e8;
+}/* SERVICE BUTTONS */
+.service-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #d4af65;
+  color: #111111;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.service-btn:hover {
+  background: transparent;
+  color: #d4af65;
+  border: 1px solid #d4af65;
 }
   
