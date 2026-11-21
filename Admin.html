@@ -1,1 +1,118 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | MADINA ORYAKHIL STUDIO</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #f5f1e8;
+      padding: 30px;
+    }
+
+    header {
+      border-bottom: 1px solid #d4af65;
+      padding-bottom: 20px;
+      margin-bottom: 35px;
+    }
+
+    h1, h2 {
+      color: #d4af65;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1b1b1b;
+      border: 1px solid #80663a;
+      border-radius: 10px;
+      padding: 25px;
+    }
+
+    .card p {
+      margin-top: 12px;
+      color: #ccc;
+    }
+
+    .notice {
+      margin-top: 30px;
+      padding: 20px;
+      border-left: 3px solid #d4af65;
+      background: #1b1b1b;
+      line-height: 1.7;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      color: #d4af65;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MADINA ORYAKHIL STUDIO</h1>
+    <p>Admin Dashboard</p>
+  </header>
+
+  <main>
+    <h2>Welcome, Admin</h2>
+
+    <div class="dashboard">
+
+      <div class="card">
+        <h2>Customers</h2>
+        <p>Manage customer requests.</p>
+      </div>
+
+      <div class="card">
+        <h2>Providers</h2>
+        <p>Manage service providers.</p>
+      </div>
+
+      <div class="card">
+        <h2>Services</h2>
+        <p>Manage marketplace services.</p>
+      </div>
+
+      <div class="card">
+        <h2>Projects</h2>
+        <p>Manage studio projects.</p>
+      </div>
+
+    </div>
+
+    <div class="notice">
+      <h2>Dashboard Status</h2>
+      <p>This is the first visual version of the admin dashboard.
+      Secure login and private data management will be added later.</p>
+    </div>
+
+    <a href="index.html">← Back to Website</a>
+  </main>
+
+</body>
+</html>
+
