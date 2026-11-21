@@ -145,7 +145,6 @@
 
   </div>
 </section>
-</section>
      <section id="skills">
   <h2>Our Skills</h2>
   <div class="gold-line"></div>
@@ -245,26 +244,35 @@
         Have a project in mind? Contact us today.
       </p>
 
-      <form id ="contactForm"
-        action="https://formspree.io/f/xeagkvqg"
-            method="POST"
-            class="contact-form">
+      <form id="contactForm"
+  action="https://formspree.io/f/xeagkvqg"
+  method="POST"
+  class="contact-form">
 
-        <input type="text" name="name"
-               placeholder="Your Name" required>
+  <input type="text" name="name"
+    placeholder="Your Full Name" required>
 
-        <input type="email" name="email"
-               placeholder="Your Email" required>
+  <input type="email" name="email"
+    placeholder="Your Email" required>
 
-        <textarea name="message"
-                  placeholder="Tell us about your project"
-                  required></textarea>
+  <select name="service" required>
+    <option value="">Choose a Service</option>
+    <option value="Web Design">Web Design</option>
+    <option value="Graphic Design">Graphic Design</option>
+    <option value="Video Editing">Video Editing</option>
+    <option value="Programming">Programming</option>
+    <option value="Other">Other</option>
+  </select>
 
-        <button type="submit" class="button">
-          Send Message
-        </button>
+  <textarea name="message"
+    placeholder="Describe the service you need..."
+    required></textarea>
 
-      </form>
+  <button type="submit" class="button">
+    Submit Request
+  </button>
+
+</form>
       <p id="formMessage"></p>
     </section>
 
