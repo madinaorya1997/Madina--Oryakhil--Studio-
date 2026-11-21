@@ -421,29 +421,38 @@ contactForm.addEventListener("submit", async function(event) {
     formMessage.textContent = "Oops! Something went wrong. Please try again.";
   }
 });
-   const providerForm = document.getElementById("providerForm");
+   
+const providerForm = document.getElementById("providerForm");
 const providerMessage = document.getElementById("providerMessage");
 
 providerForm.addEventListener("submit", async function(event) {
   event.preventDefault();
 
-  const response = await fetch(providerForm.action, {
-    method: "POST",
-    body: new FormData(providerForm),
-    headers: {
-      Accept: "application/json"
-    }
-  });
+  providerMessage.textContent = "Sending...";
 
-  if (response.ok) {
+  try {
+    const response = await fetch(providerForm.action, {
+      method: "POST",
+      body: new FormData(providerForm),
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (response.ok) {
+      providerMessage.textContent =
+        "Your application has been submitted successfully!";
+      providerForm.reset();
+    } else {
+      providerMessage.textContent =
+        "Submission failed. Please try again.";
+    }
+  } catch (error) {
     providerMessage.textContent =
-      "Thank you! Your application has been submitted successfully.";
-    providerForm.reset();
-  } else {
-    providerMessage.textContent =
-      "Something went wrong. Please try again.";
+      "Network error. Please check your internet connection.";
   }
 });
+
 </script> 
 </body>
 </html>
