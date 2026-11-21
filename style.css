@@ -700,5 +700,36 @@ footer {
 
 .js-progress {
   width: 20%;
+}/* MARKETPLACE */
+#marketplace {
+  padding: 100px 8%;
+  text-align: center;
+  background: #171717;
+}
+
+#marketplace .services-container {
+  margin-top: 40px;
+}
+
+#marketplace .service-box {
+  background: #111111;
+  border: 1px solid #d4af65;
+  border-radius: 10px;
+  padding: 30px;
+  transition: 0.3s ease;
+}
+
+#marketplace .service-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(212, 175, 101, 0.2);
+}
+
+#marketplace h3 {
+  color: #d4af65;
+  margin-bottom: 15px;
+}
+
+#marketplace p {
+  color: #f5f1e8;
 }
   
