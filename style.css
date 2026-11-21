@@ -748,5 +748,38 @@ footer {
   background: transparent;
   color: #d4af65;
   border: 1px solid #d4af65;
+}/* PROVIDER REGISTRATION */
+.provider-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #171717;
+  border: 1px solid #d4af65;
+  border-radius: 10px;
+}
+
+.provider-form h3 {
+  color: #d4af65;
+  margin-bottom: 15px;
+}
+
+.provider-form p {
+  margin-bottom: 20px;
+  color: #f5f1e8;
+}
+
+.provider-form input,
+.provider-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 14px;
+  background: #111;
+  color: white;
+  border: 1px solid #80663a;
+  border-radius: 5px;
+}
+
+.provider-form textarea {
+  min-height: 120px;
 }
   
